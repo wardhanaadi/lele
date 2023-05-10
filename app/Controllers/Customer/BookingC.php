@@ -5,6 +5,7 @@ namespace App\Controllers\Customer;
 use App\Controllers\BaseController;
 
 use App\Models\MBooking;
+use App\Models\PaketModel;
 
 class BookingC extends BaseController
 {
@@ -15,15 +16,11 @@ class BookingC extends BaseController
 	}
 	public function awal()
 	{
-		$model = new MBooking();
-		$data['paket'] = $model->findAll();
+		$paket = new PaketModel();
+		$data['paket'] = $paket->findAll();
 		return view('user/BookingC', $data);
 	}
 
-	public function tambah()
-	{
-		return view('user/BookingC');
-	}
 	public function save()
 	{
 		$this->MBooking->save([

@@ -31,8 +31,12 @@
                 <input type="text" class="form-control" id="nomor" name="nomor">
             </div>
             <div class="col-md-6 my-2">
-                <select name="paket" class="form-select" aria-label="Default select example">
+                <label for="nomor" class="form-label">No. Handphone</label>
+                <select name="paket" class="form-control" aria-label="Default select example">
                     <option selected>Pilih Paket</option>
+                    <?php foreach($paket as $pak) {?>
+                        <option value="<?= $pak['nama_paket'] ?>"><?= $pak['nama_paket'] ?></option>
+                    <?php } ?>
                 </select>
                 <!-- <label for="nama_paket" class="form-label">Pilih Paket</label>
                 <input type="text" class="form-control" id="nama_paket" name="nama_paket"> -->

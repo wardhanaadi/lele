@@ -54,9 +54,9 @@ $routes->delete('trainer/(:num)', 'Admin\Trainer::delete/$1');
 $routes->get('/', 'Home::index');
 $routes->get('profil', 'Tentangkami::awal');
 $routes->get('paket', 'Customer\PaketC::awal');
-$routes->get('booking', 'customer\BookingC::awal');
-$routes->post('bookingc/save', 'customer\BookingC::save');
-$routes->get('bayar', 'customer\Bayar::awal');
+$routes->get('booking', 'Customer\BookingC::awal');
+$routes->post('bookingc/save', 'Customer\BookingC::save');
+$routes->get('bayar', 'Customer\Bayar::awal');
 
 // 
 // 

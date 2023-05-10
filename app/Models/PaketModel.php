@@ -6,6 +6,6 @@ use CodeIgniter\Model;
 
 class PaketModel extends Model
 {
-    protected $table      = 'paket';
+    protected $table = 'paket';
     protected $allowedFields = ['nama_paket', 'deskripsi', 'harga'];
 }
